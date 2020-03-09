@@ -1,4 +1,4 @@
-import {LOGIN_FAIL, LOGIN_SUCCESS} from './types'
+import {LOGIN_FAIL, LOGIN_SUCCESS, LOGGING_IN} from './types'
 import axios from 'axios'
 
 export const login = ({email, password}) => dispatch => {
@@ -14,4 +14,8 @@ export const login = ({email, password}) => dispatch => {
     }).catch(err => dispatch({type: LOGIN_FAIL}))
 
   // return dispatch({type: LOGIN_SUCCESS, payload: {email, password}})
+}
+
+export const startLoadingUser = () => dispatch => {
+  return dispatch({type: LOGGING_IN})
 }
