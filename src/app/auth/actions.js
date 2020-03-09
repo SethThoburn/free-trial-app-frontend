@@ -1,4 +1,4 @@
-import {LOGIN_FAIL, LOGIN_SUCCESS, LOGGING_IN} from './types'
+import {LOGIN_FAIL, LOGIN_SUCCESS, LOGGING_IN} from 'app/auth/types'
 import axios from 'axios'
 
 export const login = ({email, password}) => dispatch => {

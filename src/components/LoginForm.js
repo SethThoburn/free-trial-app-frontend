@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import PropType from 'prop-types'
-import Form from './Form'
-import Spinner from './Spinner'
-import '../resources/App.css'
+import Form from 'components/Form'
+import Spinner from 'components/Spinner'
+import 'resources/App.css'
 
 export class LoginForm extends Component {
   render() {

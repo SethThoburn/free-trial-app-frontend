@@ -1,4 +1,4 @@
-import {LOGIN_SUCCESS, LOGIN_FAIL, LOGGING_IN} from './types';
+import {LOGIN_SUCCESS, LOGIN_FAIL, LOGGING_IN} from 'app/auth/types';
 
   
 const initialState = {
