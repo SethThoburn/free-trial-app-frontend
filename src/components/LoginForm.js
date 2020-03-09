@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
-import {Link} from "react-router-dom"
 import '../resources/App.css'
 
-export class Landing extends Component {
+export class LoginForm extends Component {
   state = {
     email: '',
     password: '',
@@ -43,7 +42,12 @@ export class Landing extends Component {
                 className='mb-3'
                 onChange={this.onChange}
               />
-              <a href="#"><span style={{fontSize: "11px"}}>Forgot your password?</span></a>
+              <a 
+                href="https://www.google.com"
+                style={{fontSize: "11px"}}
+              >
+              Forgot your password?
+              </a>
                 <button color='dark' style={{ marginTop: '1rem' }}>
                   Login
                 </button>
@@ -55,4 +59,4 @@ export class Landing extends Component {
   }
 }
 
-export default Landing
+export default LoginForm
