@@ -11,9 +11,10 @@ export const login = ({email, password}) => dispatch => {
         type: LOGIN_SUCCESS,
         payload: res.data,
       })
-    }).catch(err => dispatch({type: LOGIN_FAIL}))
+    }).catch(err => {
+      dispatch({type: LOGIN_FAIL, payload: err})
+    })
 
-  // return dispatch({type: LOGIN_SUCCESS, payload: {email, password}})
 }
 
 export const startLoadingUser = () => dispatch => {

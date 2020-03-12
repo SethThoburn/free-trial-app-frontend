@@ -6,6 +6,29 @@
   padding: 0;
 }
 
+button {
+  border: none;
+  height: 30px;
+  cursor: pointer;
+  width: 100%;
+  justify-content: stretch;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  outline: none;
+  display: grid;
+}
+
+button a {
+  width: 100%;
+  height: 100%;
+  justify-content: stretch;
+}
+
+button:hover {
+  background: #E5F9FF;
+  transition: .1s;
+}
+
 body {
   font-family: "Goudy Bookletter 1911", sans-serif;
   background: #fff;
@@ -62,14 +85,20 @@ ul {
   justify-content: center;
 }
 
-.landing .landing-inner .form-group {
+.landing .landing-inner .landing-form {
   padding: 40px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background: #E5F9FF;
   border-radius: 10px;
   box-shadow: #000000;
   display: grid;
-  justify-items: start;
+  justify-items: stretch;
+  align-content: start;
+}
+
+.landing .landing-inner .form-group {
+  display: grid;
+  justify-items: stretch;
   align-content: start;
 }
 .landing .landing-inner .form-group label {
@@ -100,4 +129,46 @@ ul {
 }
 .landing .landing-inner .form-group button:hover {
   opacity: .8;
+}
+
+/* Alert */
+.alert-container {
+  border: 1px solid #F67280;
+  border-radius: 4px;
+  height: 50px;
+  padding: .5em;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+}
+
+.alert-container span {
+  color: #F67280;
+}
+
+/* Dashboard */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 7em 13em;
+  justify-items: stretch;
+  opacity: .8;
+  width: 100%;
+}
+
+.dashboard-container .dashboard-headers {
+  border-right: 1px solid #355C7D;
+  display: grid;
+  justify-content: stretch;
+  border-bottom: 1px solid #355C7D;
+  width: 100%;
+}
+.dashboard-container .dashboard-headers:last-child {
+  border-right: none;
+}
+
+.dashboard-container .dashboard-headers button a {
+  padding-top: 6px;
 }

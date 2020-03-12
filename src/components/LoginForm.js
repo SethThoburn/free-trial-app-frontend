@@ -1,26 +1,15 @@
 import React, {Component} from 'react'
 import PropType from 'prop-types'
 import Form from 'components/Form'
-import Spinner from 'components/Spinner'
 import 'resources/App.css'
 
 export class LoginForm extends Component {
   render() {
     
     return (
-      <div className="landing-outer">
-      <div className="landing">
-        <div className="landing-inner">
-
-        { 
-          this.props.isLoading 
-          ? <Spinner />
-          : <Form login={this.props.login}/>
-        }
-
-        </div>
-        </div>
-      </div>
+      <React.Fragment>
+        <Form login={this.props.login}/>
+      </React.Fragment>
     )
   }
 }

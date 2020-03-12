@@ -45,9 +45,9 @@ export class Form extends Component {
           >
           Forgot your password?
           </a>
-            <button color='dark' style={{ marginTop: '1rem' }}>
-              Login
-            </button>
+          <button color='dark' style={{ marginTop: '1rem' }}>
+            Login
+          </button>
         </form>
       </React.Fragment>
     )

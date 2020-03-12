@@ -1,0 +1,1 @@
+export {default as DashReducer} from 'app/dashboard/reducer'
